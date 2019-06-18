@@ -1,1 +1,68 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ginny's project</title>
+  <link rel="stylesheet" type="text/css" href="./jsonactivity.css">
+</head>
+<body>
+  <h2>Lots of E's</h2>
+
+  <div >
+    <label>Enter number of E rows</label>
+    <input type="number" id="enumber">
+  <div>
+
+  <div>
+    <h2>
+    number of e's
+    </h2>
+  <div>
+  <div >
+    <div class="e-counter">
+      <p id='counter'><p>
+    </div>
+    <div class="e-counter">
+      <video width="320" height="240" controls>
+          <source src="https://www.youtube.com/watch?v=Cm_OTNAjWvg" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+  <div id='thee'></div>
+</body>
+<script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+
+    var enumber = document.getElementById('enumber')
+
+    enumber.addEventListener('change', function() {
+
+    var title = ""
+
+    rows = Math.min(enumber.value, 1000)
+    columns = 500
+
+    for (var j=0; j < rows ; j++) {
+
+      counter = rows * columns
+
+      var counterNode = document.getElementById("counter");
+      counterNode.innerHTML = "<p>" + counter + "</p>";
+
+      title = ''
+      for (var i=0; i < columns; i++) {
+        title += 'e'
+      }
+      title = title + '.'
+      var node = document.createElement("p");
+      var textnode = document.createTextNode(title);
+      node.appendChild(textnode);
+      document.getElementById("thee").appendChild(node);
+    }
+
+    });
+  });
+
+</script>
+</html>

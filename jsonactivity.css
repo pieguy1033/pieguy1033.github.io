@@ -1,0 +1,20 @@
+p {
+    color:turquoise;
+    font-size: 3rem;
+    line-height: 5px;
+  }
+  
+  #counter p {
+    color:cadetblue;
+    font-size: 10rem;
+  }
+  
+  h2 {
+  background-color:yellowgreen;
+  
+  }
+  
+  .e-counter {
+    display: inline-block;
+  }
+  
